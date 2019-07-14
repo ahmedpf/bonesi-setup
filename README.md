@@ -2,7 +2,7 @@ Install BoNeSi
 For Installing the BoNeSI DDoS Botnet Simulator on Ubuntu 18.04 LTS
 
 
-curl -O https://raw.githubusercontent.com/kkirsche/install-BoNeSi/master/install.sh
+curl -O https://github.com/ahmedpf/bonesi-setup/blob/master/install.sh
 chmod -x ./install.sh
 sh ./install.sh
 rm ./install.sh
