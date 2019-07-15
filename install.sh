@@ -50,13 +50,13 @@ case ${osinfo} in
     echo
     echo '[*] Installing BoNeSi'
     sudo -n git clone https://github.com/Markus-Go/bonesi.git /opt/bonesi
-    sudo -n cd /opt/bonesi
-    sudo -n autoreconf -f -i
-    sudo -n ./configure
-    sudo -n make
-    sudo -n make install
-    sudo -n rm -rf !\(50k-bots|browserlist.txt|urllist.txt\)
-    sudo -n cd
+     cd /opt/bonesi
+    autoreconf -f -i
+    ./configure
+     make
+   make install
+    rm -rf !\(50k-bots|browserlist.txt|urllist.txt\)
+    cd
     
     sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
     sudo service sshd restart 
